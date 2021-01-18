@@ -1,0 +1,154 @@
+<!-- Deklaracija tipa dokumenta. Radimo u poslednjoj verziji HTML-a, odnosno HTML 5. Da bismo videli kako izgleda deklaracije
+prethodne vertzije, neophodno je uneti html:4t. Vidi se da je deklaracija mnogo duža.
+-->
+<!DOCTYPE html>
+
+
+<html lang="en" dir="ltr">
+
+<!-- Govori browser-u kako da upravlja stranicom.-->
+
+<head>
+  <!--
+    Ceo tekst na stranici koristi utf-8 sistem kodiranja, jer sadrži sve internacionalne simbole.
+    Ova informacija je bitna browser-u prilikom prikazivanja sajta
+
+    Meta tagovi govore browser-u kako da renderuje/prikaže stranicu.
+  -->
+  <meta charset="utf-8">
+  <meta name="description" content="Ovaj sajt je izrađen na osnovu kursa sa Udemy-ja!">
+  <!-- Naziv stranice, odnosno naziv tab-a.-->
+  <!-- Srce je kopirano sa stranice https://unicode-table.com/en/2764/ .-->
+  <title> ❤ Moj sajt</title>
+</head>
+
+<body>
+  <!-- Link ka slici na internetu.
+  <img src="data:image/jpeg;base64,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" alt="Sofijina profilna slika">
+ -->
+  <!-- Slika koja se nalazi u istom folderu gde i index.html. Nalaze se na istom nivou hijerarhije.
+ <img src="Profilna slika.jfif" alt="Sofijina profilna slika">
+ -->
+  <!-- Slika se nalazi u folderu images-->
+
+<table cellspacing="20">
+  <tr>
+    <td>
+      <img src="images/sijalica.jpg" alt="Profilna slika" width="160" height="120">
+    </td>
+    <td>
+      <h1>Ime Prezime</h1>
+      <p><em>Radim u <strong> X firmi.</strong>.</em></p>
+      <p>Moje zanimanje je X. ❤ da pijem kafu.</p>
+    </td>
+  </tr>
+</table>
+
+
+
+
+  <hr>
+  <h3>Obrazovanje</h3>
+  <!--Neuređena lista. Npr ne stoji 1.2.3 ispred naziva elementa liste ili i,ii,iii itd -->
+  <ul>
+    <li>Srednja škola</li>
+    <li>Fakultet - Osnovne studije</li>
+    <li>Fakultet - Master studije</li>
+  </ul>
+  <hr>
+  <h3>Radno iskustvo</h3>
+  <table cellspacing="10">
+    <!-- heder tabele-->
+    <thead>
+      <tr>
+        <!-- kolone koje predstavljaju naslov svake-->
+        <th>Godina</th>
+        <th>Poslodavac</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- red-->
+      <tr>
+        <!-- kolona-->
+        <td>2019 - 2020</td>
+        <td>Firma 1</td>
+      </tr>
+      <tr>
+        <td>2020</td>
+        <td>Firma 2</td>
+      </tr>
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+  </table>
+<hr>
+  <h3>Veštine</h3>
+  <table cellspacing="10">
+    <tr>
+      <td>HTML</td>
+      <!-- Klinkula WIN+. i došla do smajlića.-->
+      <td>⭐⭐⭐⭐⭐</td>
+    </tr>
+    <tr>
+      <td>CSS</td>
+            <td>⭐⭐⭐⭐⭐</td>
+    </tr>
+    <tr>
+      <td>JavaScript</td>
+            <td>⭐⭐</td>
+
+    </tr>
+  </table>
+  <hr>
+  <!-- Ugnježdena tabela-->
+  <h3>Ugnježdena tabela</h3>
+<table>
+  <tr>
+    <td>
+      <table>
+        <tr>
+          <td>HTML</td>
+          <!-- Klinkula WIN+. i došla do smajlića.-->
+          <td>⭐⭐⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+                <td>⭐⭐⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+                <td>⭐⭐</td>
+
+        </tr>
+      </table>
+
+    </td>
+
+    <td>
+      <table>
+        <tr>
+          <td>HTML</td>
+          <!-- Klinkula WIN+. i došla do smajlića.-->
+          <td>⭐⭐⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+                <td>⭐⭐⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+                <td>⭐⭐</td>
+
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+
+</table>
+  <hr>
+  <p><a href="hobiji.html">Hobiji</a> <a href="kontakt.html">Kontakt</a></p>
+</body>
+
+</html>
